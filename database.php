@@ -3,7 +3,7 @@ $hostName = "localhost";
 $dbUser = "root";
 $dbPassword = "";
 $dbName = "login_register";
-// Create a connection to the database
+// Create and establish a connection to the database
 $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 
 // Check the connection
