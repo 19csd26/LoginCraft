@@ -17,6 +17,7 @@ if (isset($_SESSION["user"])) {
 <body>
     <div class="container">
         <?php
+         //after clicking the submit button this logic startes its implementation
         if (isset($_POST["submit"])) {
            $fullName = $_POST["fullname"];
            $email = $_POST["email"];
@@ -38,7 +39,7 @@ if (isset($_SESSION["user"])) {
            if (strlen($password)<8) {
             array_push($errors,"Password must be at least 8 charactes long");
            }
-           // to check that the repeat password and entered password is same!!!
+           // to check that the repeat password and entered password is same or not
            if ($password!==$passwordRepeat) {
             array_push($errors,"Password does not match");
            }
