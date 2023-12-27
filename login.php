@@ -93,7 +93,7 @@
         <!-- Link to registration page for new users -->
         <div><p>Not registered yet?<a href="registration.php">Register Here</a></p></div>
 
-        <!-- Link to registration page for new users -->
+        <!-- Link to Forgot Password page for users -->
         <div><p>Forgot Password! <a href="forgot_password.php">Click Here</a></p></div>
     </div>
 </body>
