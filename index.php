@@ -10,7 +10,7 @@ if (!isset($_SESSION["user"])) {
 // Retrieve user information from the session
 $userFullName = isset($_SESSION["user"]["full_name"]) ? $_SESSION["user"]["full_name"] : "User";
 ?><?php
-    // Function to read todo items from a file
+    // Function to fetch todo items from a file
     function readTodoList()
     {
         $file = 'todolist.txt';
@@ -70,33 +70,18 @@ $userFullName = isset($_SESSION["user"]["full_name"]) ? $_SESSION["user"]["full_
     <!-- Custom styles with background image -->
     <style>
         body {
-            background-image: url('bg.jpg');
+            background-image: url('wallpaperflare.com_wallpaper\ \(2\).jpg');
             background-size: cover;
             background-color: black;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            color: goldenrod;
+            color: blueviolet;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="background-color: gray; color:goldenrod" class="container-fluid">
-            <a class="navbar-brand" href="#">LoginCraft</a>
-            <div class="navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:goldenrod" href="http://localhost/New%20folder/PHP_Learning/login-register-main/login.php">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color:goldenrod" href="http://localhost/New%20folder/PHP_Learning/login-register-main/registration.php">Registration</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div class="container">
         <h1>Welcome to Dashboard, <?php echo $userFullName; ?>!</h1>
         <a href="logout.php" class="btn btn-warning">Logout</a>
@@ -106,7 +91,7 @@ $userFullName = isset($_SESSION["user"]["full_name"]) ? $_SESSION["user"]["full_
         <form method="post">
             <label for="task">New Task:</label>
             <input type="text" id="task" name="task" required>
-            <button type="submit">Add Task</button>
+            <button type="submit" class="btn btn-warning">Add Task</button>
         </form>
 
         <ul>
